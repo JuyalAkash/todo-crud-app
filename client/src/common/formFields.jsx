@@ -1,0 +1,88 @@
+export const registerFormFields = [
+  {
+    label: "First Name",
+    type: "text",
+    name: "firstname",
+    placeholder: "Enter your first name",
+    required: "Please input your firstname name!",
+    gridCols: 1,
+    maxLength: 10,
+    regExp:
+      /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u,
+    error: "Please input your firstname name!",
+    regExpError: "First name can not contain number and special character",
+  },
+  {
+    label: "Last Name",
+    type: "text",
+    name: "lastname",
+    placeholder: "Enter your last name",
+    required: "Please input your lastname name",
+    gridCols: 1,
+    maxLength: 10,
+    regExp:
+      /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u,
+    error: "Please input your lastname name!",
+    regExpError: "Last name can not contain number and special character",
+  },
+  {
+    label: "Email",
+    type: "email",
+    name: "email",
+    placeholder: "Enter your email address",
+    required: "The input is not valid E-mail!",
+    gridCols: 2,
+    regExp:
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    error: "Please input your E-mail!",
+    regExpError: "The input is not valid E-mail!",
+  },
+  {
+    label: "Password",
+    type: "password",
+    name: "password",
+    placeholder: "Enter your password",
+    required: "Password must have minimum 8 characters",
+    gridCols: 1,
+    regExp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
+    error: "Please input your password!",
+    regExpError: "Password must have minimum 8 characters",
+  },
+  {
+    label: "Confirm Password",
+    type: "password",
+    name: "confirmpassword",
+    placeholder: "Confirm your password",
+    required: "Password must have minimum 8 characters",
+    gridCols: 1,
+    regExp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
+    error: "Please input your confirm password!",
+    regExpError: "Password must have minimum 8 characters",
+  },
+];
+
+export const loginFormFields = [
+  {
+    label: "Email",
+    type: "email",
+    name: "email",
+    placeholder: "Enter your email address",
+    required: "The input is not valid E-mail!",
+    gridCols: 2,
+    regExp:
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    error: "Please input your E-mail!",
+    regExpError: "The input is not valid E-mail!",
+  },
+  {
+    label: "Password",
+    type: "password",
+    name: "password",
+    placeholder: "Enter your password",
+    required: "Password must have minimum 8 characters",
+    gridCols: 2,
+    regExp: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
+    error: "Please input your password!",
+    regExpError: "Password must have minimum 8 characters",
+  },
+];
